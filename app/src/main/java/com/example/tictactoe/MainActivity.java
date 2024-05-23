@@ -20,8 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         id_init();
-
-
+        
     }
 
     private void id_init() {
@@ -105,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void clearbuttons() {
-        
+
 
         btn1.setText("");
         btn2.setText("");
