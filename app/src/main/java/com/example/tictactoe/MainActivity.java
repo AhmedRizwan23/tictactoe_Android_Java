@@ -96,12 +96,17 @@ public class MainActivity extends AppCompatActivity {
                 } else if (b3.equals(b5) && b5.equals(b7) && !b3.equals("")) {
                     Toast.makeText(this, "winner is " + b3, Toast.LENGTH_SHORT).show();
                     clearbuttons();
+                } else if (count == 9) {
+                    Toast.makeText(this, "no winner", Toast.LENGTH_SHORT).show();
+                    clearbuttons();
                 }
             }
         }
     }
 
     private void clearbuttons() {
+        
+
         btn1.setText("");
         btn2.setText("");
         btn3.setText("");
@@ -112,5 +117,6 @@ public class MainActivity extends AppCompatActivity {
         btn8.setText("");
         btn9.setText("");
         flag = 0;
+        count = 0;
     }
 }
