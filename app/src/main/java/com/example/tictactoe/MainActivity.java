@@ -43,7 +43,17 @@ public class MainActivity extends AppCompatActivity {
         resetbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clearbuttons();
+                player1.setText("Player X: 0");
+                player2.setText("Player O: 0");
+                btn1.setText("");
+                btn2.setText("");
+                btn3.setText("");
+                btn4.setText("");
+                btn5.setText("");
+                btn6.setText("");
+                btn7.setText("");
+                btn8.setText("");
+                btn9.setText("");
 
 
             }
@@ -201,11 +211,10 @@ public class MainActivity extends AppCompatActivity {
                 btn9.setText("");
                 flag = 0;
                 count = 0;
-                player1.setText("Player X: 0");
-                player2.setText("Player O: 0");
+
 
             }
-        }, 4000);
+        }, 2000);
 
 
     }

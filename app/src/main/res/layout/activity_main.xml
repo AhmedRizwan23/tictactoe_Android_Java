@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="100dp"
         android:padding="8dp"
         android:text="Tic Tac Toe"
         android:textSize="24sp"
@@ -110,6 +110,18 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ScoreBoard"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -122,14 +134,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="40dp"
-            android:text="Player x: 0" />
+            android:text="Player X:0"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/player2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="40dp"
-            android:text="Player O: O" />
+            android:text="Player O:O"
+            android:textSize="25sp" />
 
 
     </LinearLayout>
