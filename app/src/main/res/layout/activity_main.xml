@@ -4,6 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B67289"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -97,6 +98,12 @@
 
             android:layout_margin="50dp"
 
+            android:backgroundTint="#5F458E"
+            android:fadingEdge="horizontal"
+            android:shadowColor="#AE9859"
+            android:shadowDx="@dimen/material_emphasis_high_type"
+            android:shadowDy="@dimen/material_emphasis_high_type"
+            android:shadowRadius="23"
             android:text="reset" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -142,6 +149,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="40dp"
+            android:shadowColor="#ADC197"
             android:text="Player O:O"
             android:textSize="25sp" />
 
