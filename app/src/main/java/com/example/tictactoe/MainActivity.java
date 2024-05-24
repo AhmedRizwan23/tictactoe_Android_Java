@@ -50,11 +50,12 @@ public class MainActivity extends AppCompatActivity {
         next_activity_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent inext = new Intent();
+                Intent inext;
+                inext = new Intent(MainActivity.this, page2_secondactivity.class);
                 inext.putExtra("title", "home");
                 inext.putExtra("studentname", "Ahmed");
                 inext.putExtra("Rollno", 10);
-                inext = new Intent(MainActivity.this, page2_secondactivity.class);
+
                 startActivity(inext);
 
             }
