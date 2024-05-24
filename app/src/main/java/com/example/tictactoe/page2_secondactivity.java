@@ -24,6 +24,7 @@ public class page2_secondactivity extends AppCompatActivity {
         System.out.println("Roll No: " + rollno);
         TextView txtstudentinfo = findViewById(R.id.txtstudentinfo);
 
-        txtstudentinfo.setText(" ahmed");
+        txtstudentinfo.setText(" Roll no" + rollno + "Student Name: " + studentname + "Title: " + title);
+        getSupportActionBar().setTitle(title);
     }
 }

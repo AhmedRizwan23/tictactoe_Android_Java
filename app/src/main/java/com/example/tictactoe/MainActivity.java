@@ -52,13 +52,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent inext;
                 inext = new Intent(MainActivity.this, page2_secondactivity.class);
-                inext.putExtra("title", "home");
+                inext.putExtra("title", "this title is set using intent");
                 inext.putExtra("studentname", "Ahmed");
                 inext.putExtra("Rollno", 10);
 
                 startActivity(inext);
 
             }
+
+
         });
 
     }
