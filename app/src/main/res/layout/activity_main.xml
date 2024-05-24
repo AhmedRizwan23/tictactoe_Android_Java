@@ -20,6 +20,7 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
+
     <!-- Grid Layout for Buttons -->
     <GridLayout
         android:layout_width="wrap_content"
@@ -28,55 +29,55 @@
         android:rowCount="3">
 
         <!-- Buttons for the Tic Tac Toe Grid -->
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="Check" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="Check" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="Check" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="Check" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="Check" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="Check" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="Check" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="Check" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -84,13 +85,30 @@
 
     </GridLayout>
 
-    <Button
-        android:id="@+id/resetbutton"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_height="wrap_content">
 
-        android:text="reset" />
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/resetbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="50dp"
+
+            android:text="reset" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="50dp"
+            android:text="Next page" />
+
+
+    </LinearLayout>
 
 
     <LinearLayout

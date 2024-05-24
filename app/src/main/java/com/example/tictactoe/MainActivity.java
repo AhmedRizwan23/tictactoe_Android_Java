@@ -1,5 +1,6 @@
 package com.example.tictactoe;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     static TextView player1;
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, resetbutton;
+    Button next_activity_button;
     TextView player2;
     String b1, b2, b3, b4, b5, b6, b7, b8, b9;
     int flag = 0;
@@ -45,6 +47,18 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        next_activity_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inext = new Intent();
+                inext.putExtra("title", "home");
+                inext.putExtra("studentname", "Ahmed");
+                inext.putExtra("Rollno", 10);
+                inext = new Intent(MainActivity.this, page2_secondactivity.class);
+                startActivity(inext);
+
+            }
+        });
 
     }
 
@@ -61,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         resetbutton = findViewById(R.id.resetbutton);
         player1 = findViewById(R.id.player1);
         player2 = findViewById(R.id.player2);
+        next_activity_button = findViewById(R.id.buttonnext);
 
     }
 
