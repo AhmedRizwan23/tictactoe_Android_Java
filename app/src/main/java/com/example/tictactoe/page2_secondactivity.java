@@ -72,7 +72,7 @@ public class page2_secondactivity extends AppCompatActivity {
         arrNames.add("ali");
         arrNames.add("123");
 
-
+//adapter is used to bind the data to the listview
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrNames);
         listview.setAdapter(adapter);
 
