@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B179FF"
-    android:gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".page2_secondactivity">
 
 
@@ -14,9 +15,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HEllo"
-        android:textSize="32sp"
+        android:textSize="14sp"
 
 
         />
+
+    <TextView
+        android:id="@+id/listviewtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listview"
+        android:textSize="14sp"
+
+
+        />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </ListView>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="100dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/actxtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="23dp"
+
+        android:hint="Search here" />
+
 
 </LinearLayout>
