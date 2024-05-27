@@ -5,5 +5,27 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="CustomTheme" parent="Theme.Material3.DayNight">
+        <!-- Primary branding color for the app -->
+        <item name="colorPrimary">#FF8492</item>
+        <!-- Dark variant of the primary branding color -->
+        <item name="colorPrimaryDark">#009688</item>
+        <!-- Accent color for highlighting parts of the UI -->
+        <item name="colorAccent">#230A0C</item>
+        <!-- Background color for the app -->
+        <item name="android:colorBackground">#009688</item>
+        <!-- App bar color -->
+        <item name="colorPrimaryContainer">#FF8492</item> <!-- For Material3 themes -->
+        <!-- App bar text color -->
+        <item name="android:textColorPrimary">#A83636</item> <!-- Optional: Set text color -->
+    </style>
+
+    <style name="Mybuttonstylebold">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF2344</item>
+
+    </style>
+
     <style name="Theme.Tictactoe" parent="Base.Theme.Tictactoe" />
 </resources>

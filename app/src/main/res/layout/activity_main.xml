@@ -4,9 +4,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#93AFAD"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    android:theme="@style/CustomTheme"
     tools:context=".MainActivity">
 
     <!-- Title -->
@@ -40,7 +40,8 @@
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="Check" />
+            android:onClick="Check"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn3"

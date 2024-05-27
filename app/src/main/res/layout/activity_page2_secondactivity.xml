@@ -4,7 +4,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B179FF"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".page2_secondactivity">
@@ -50,7 +49,14 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="23dp"
 
-        android:hint="Search here" />
+        android:hint="Search here"
+        android:minHeight="48dp" />
+
+    <Button
+        style="@style/Mybuttonstylebold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit " />
 
 
 </LinearLayout>
