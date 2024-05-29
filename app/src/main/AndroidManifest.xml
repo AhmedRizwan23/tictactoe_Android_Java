@@ -13,17 +13,18 @@
         android:theme="@style/Theme.Tictactoe"
         tools:targetApi="31">
         <activity
+            android:name=".page2"
+            android:exported="false" />
+        <activity
             android:name=".splash_screen"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Base.Theme.Tictactoe.noappbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
-
         <activity
             android:name=".page2_secondactivity"
             android:exported="false"
@@ -31,9 +32,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/CustomTheme">
-
-        </activity>
+            android:theme="@style/CustomTheme"></activity>
     </application>
 
 </manifest>

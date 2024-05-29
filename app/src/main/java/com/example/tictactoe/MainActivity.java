@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     static TextView player1;
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, resetbutton;
-    Button next_activity_button;
+    Button next_activity_button, page2button;
     TextView player2;
     String b1, b2, b3, b4, b5, b6, b7, b8, b9;
     int flag = 0;
@@ -74,6 +74,16 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+        page2button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ipage2;
+                ipage2 = new Intent(MainActivity.this, page2.class);
+                startActivity(ipage2);
+
+            }
+        });
+
     }
 
     private void id_init() {
@@ -90,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         player1 = findViewById(R.id.player1);
         player2 = findViewById(R.id.player2);
         next_activity_button = findViewById(R.id.buttonnext);
+        page2button = findViewById(R.id.page2button);
 
     }
 
